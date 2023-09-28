@@ -1,0 +1,177 @@
+
+
+
+/* big tablet to 1200px: widths smaller then the 1140px row*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+    
+    .logo {
+        width: 20%;
+        padding: 0 2%;
+        margin-left: 1%;
+    }
+    
+    .attraction-photo img {
+        width: 100%;
+        height: 200px;
+    
+    }
+}
+
+/* Small tablet to big tablet: from 768 to 1023*/
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px;}
+    section { padding:  60px 0;}
+    
+   
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .logo {
+        width: 20%;
+        height: 150px;
+        padding: 0 2%;
+        margin-top: -10px;
+        margin-left: -3%;
+    }
+    
+    .attractions-showcase {
+        
+        margin-bottom: 350px;
+    }
+    .attractions-showcase li {
+        display: block;
+        float: left;
+        width: 50%;
+        padding-bottom: 0px;
+        
+    }
+    .attraction-photo img {
+        width: 100%;
+        height: 180px;
+        display: inline-block;
+        float: left;
+    
+    }
+    
+    h1 {
+        font-size: 180%;
+    }
+    
+    h2 {
+        font-size: 160%;
+    }
+    
+    h2:after {
+        width: 600px;   
+    }
+
+}
+
+
+
+
+/* Small phone to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) 
+{
+    body { font-size: 16px;}
+    section { padding: 30px 0;}
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col { width: 100%;}
+    
+
+    .main-nav { display: none; }
+    
+    .mobile-nav-icon { display: inline-block; }
+    
+    .main-nav {
+        float: left;
+        margin-top: 15px;
+    }
+    
+    .main-nav li {
+        display: block;
+        height: 1px
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 3px 0;
+    }
+    
+    h1 { font-size: 110%;}
+    
+    h2 { font-size: 110%;}
+    
+    .attraction-photo img {
+        width: 100%;
+        height: 110px;
+    
+    }
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .logo {
+        width: 40%;
+        height: 150px;
+        padding: 0 2%;
+        margin-top: -10px;
+        margin-left: -3%;
+    }
+    
+    h2:after {
+        width: 350px;   
+    }
+    footer {
+        height: 200px;
+        padding:10px;
+    }
+}
+
+
+
+/* Small phone from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .attraction-photo img {
+        
+        height: 130px;
+        width: 100%;
+    
+    }
+    
+    .attractions-showcase li {
+    
+        
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

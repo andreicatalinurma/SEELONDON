@@ -1,0 +1,175 @@
+.pages {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/london.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/london.jpg);
+    padding: 40px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.grid {
+    display: grid;
+    margin: 0 180px 0;
+    padding: 0;
+    grid-template-columns: 20% 10% 60%;
+    
+}
+.grid div:nth-child(1) {
+
+    background-color: #fff;
+    
+}
+.grid div:nth-child(2) {
+
+    background-color: #fff;
+    
+}
+
+.grid div:nth-child(3) {
+
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.container {
+    
+    display: inline-grid;
+    padding: 50px;
+    grid-template-columns: 50% 50%;
+}
+
+.a-details {
+    margin-right: 50px;
+}
+
+
+.b-details {
+    margin-left: 50px;
+}
+
+.grid-attraction1 {
+    
+    display: grid;
+    margin: 0 200px 0;
+    padding: 0px;
+    grid-template-columns: 30% 40% 30%; 
+}
+
+
+/* contact form*/
+
+.grid-details-map {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 50% 50%;
+    margin-left: 370px;
+    margin-right: 200px;
+}
+
+.gallery {
+    margin: 10px 240px;
+    height: 200px
+    
+}
+
+.gallery img {
+    width: 350px;
+    height: 100%;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    
+}
+
+.grid-1a {
+    padding: 0 30px  0 0 
+}
+
+.infos {
+    
+    margin: 30px 30px 10px 410px;
+}
+
+.accom {
+    
+    margin-top: 25px
+    
+}
+
+.grid-1a,
+.grid
+{
+    font-size: 18px;
+    word-spacing: 1px;
+    text-align: justify;
+    letter-spacing: 1px;
+    
+}
+
+.attraction-text {
+    margin-bottom: 0;
+    padding-top: 25px;
+    text-align: center;
+   
+}
+
+
+.team-img {
+    display: inline-grid;
+    margin: 100px 240px;
+    height: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+}
+
+.team-img img {
+    width: 350px;
+    height: 76%;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.team-img img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    
+}
+
+.team-title {
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+
+.iframe {
+    border-width: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

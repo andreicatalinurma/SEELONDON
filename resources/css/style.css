@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* --------------------*/
+/* reusable components*/
+/* --------------------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+  padding: 1%;  
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    
+    
+}
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 30px;
+    
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background: #ff8000;
+    content: "";
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+/* -----PARAGRAPHS---*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 0px;
+}
+
+/* ----ICONS---- */
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #ff8000;
+    margin-bottom: 20px;
+    
+}
+
+/* BUTTON */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: #ff8000;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #f28a20;
+}
+
+/* --------------------*/
+/* HEADER*/
+/* --------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/london.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* https://www.twelvetransfers.co.uk/wp-content/uploads/2018/05/london-sightseeing.jpg */
+
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-top: -25px;
+    margin-left: -300px;
+    
+}
+
+
+/* --------------------*/
+/* main-navi*/
+/* --------------------*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #ff8000;
+}
+
+/* --------------------*/
+/* stichy-navi*/
+/* --------------------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 3px 2px #d4d4d4;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    
+    margin-top: -5px;
+}
+
+.sticky .logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: -15px;
+    margin-bottom: -30px;
+    
+    
+}
+
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    
+    padding: 15px 0px;
+    color: #555;
+    
+}
+
+/* --------------------*/
+/* mobile navi*/
+/* --------------------*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* --------------------*/
+/* attractions-showcase*/
+/* --------------------*/
+.section-attractions {
+    padding: 50px;
+    margin: 10px;
+}
+
+.attractions-showcase {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 300px
+}
+.attractions-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding-bottom: 0px;
+}
+
+.attraction-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.attraction-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: 300px;
+    transform: scale(1.15);
+    transition: transform 0.7s, opacity 0.5s;
+}
+
+.attraction-photo img:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+
+/* --------------------*/
+/* FOOTER*/
+/* --------------------*/
+footer {
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+    margin-top: 100px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    padding-top: 20px;
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links a:link,
+.social-links a:visited {
+    font-size: 180%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 10px;
+}
+
+
+
+
+/* --------------------*/
+/* FORM*/
+/* --------------------*/
+
+.contact-form {
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+input [type=name],
+input [type=email],
+input [type=find-us],
+input [type=message],
+select,
+textarea {
+    width: 30%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    max-width: 30%;
+    max-height: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
